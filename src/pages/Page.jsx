@@ -9,8 +9,8 @@ const Page = () =>{
     const [pages, setPages] = useState(1)
     const changePageHandler = () => {
         setPages((prevPage)=>{
-            if(prevPage > 3){
-                return prevPage - 3
+            if(prevPage === 3){
+                return prevPage - 2
             }
             return prevPage + 1
         })
