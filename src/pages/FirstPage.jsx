@@ -7,6 +7,7 @@ import Sectionposition from '../Components/SectionPosition/SectionPosition';
 const FirstPage = (props) =>{
     const title = "Plant lover Community"
     const desc = "Find gardening enthusiasts from all over the world"
+    const button = "Continue"
     return (
         <>
            <figure>
@@ -14,7 +15,7 @@ const FirstPage = (props) =>{
            </figure>
            <PageText title={title} description={desc}/>
            <Sectionposition />
-           <Button changePage={props.onChangePage}/>
+           <Button changePage={props.onChangePage} text={button}/>
            <SkipButton />
         </>
     )
