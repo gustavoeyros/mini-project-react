@@ -14,7 +14,7 @@ const ThirdPage = (props) =>{
            </figure>
            <PageText title={title} description={desc}/>
            <Sectionposition />
-           <Button/>
+           <Button changePage={props.onChangePage}/>
            <SkipButton />
         </>
     )
