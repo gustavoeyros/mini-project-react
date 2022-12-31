@@ -14,7 +14,7 @@ const ThirdPage = (props) =>{
             <img src={thirdImage} />
            </figure>
            <PageText title={title} description={desc}/>
-           <Sectionposition />
+           <Sectionposition positionColor={props.position}/>
            <Button changePage={props.onChangePage} text={button}/>
         </>
     )

@@ -9,12 +9,13 @@ const FirstPage = (props) =>{
     const desc = "Find gardening enthusiasts from all over the world"
     const button = "Continue"
     return (
+       
         <>
            <figure>
             <img src={firstImage} />
            </figure>
            <PageText title={title} description={desc}/>
-           <Sectionposition />
+           <Sectionposition positionColor={props.position}/>
            <Button changePage={props.onChangePage} text={button}/>
            <SkipButton />
         </>

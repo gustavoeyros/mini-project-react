@@ -14,7 +14,7 @@ const SecondPage = (props) =>{
             <img src={secondImage} />
            </figure>
            <PageText title={title} description={desc}/>
-           <Sectionposition />
+           <Sectionposition positionColor={props.position}/>
            <Button changePage={props.onChangePage} text={button}/>
            <SkipButton />
         </>

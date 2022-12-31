@@ -10,7 +10,7 @@
     border: 1px solid black;
     border-radius: 50%;
 }
-.container div:first-of-type{
+.container .colorSection{
     background: #92E3A9;
     border: none;
 }

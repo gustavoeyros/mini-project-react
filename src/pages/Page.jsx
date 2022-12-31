@@ -17,9 +17,9 @@ const Page = () =>{
     }
     return (
         <>
-           {(pages == 1 || pages > 3) &&  <FirstPage onChangePage={changePageHandler} />}
-           {pages === 2 && <SecondPage onChangePage={changePageHandler} />}
-           {pages === 3 && <ThirdPage onChangePage={changePageHandler} />}
+           {(pages == 1 || pages > 3) &&  <FirstPage onChangePage={changePageHandler} position={pages} />}
+           {pages === 2 && <SecondPage onChangePage={changePageHandler} position={pages} />}
+           {pages === 3 && <ThirdPage onChangePage={changePageHandler} position={pages} />}
         </>
     )
 }
