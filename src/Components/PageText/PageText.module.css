@@ -1,0 +1,10 @@
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+.textContainer p{
+   width: 70%;
+}

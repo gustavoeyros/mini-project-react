@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+.container div{
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.container div:first-of-type{
+    background: #92E3A9;
+    border: none;
+}
