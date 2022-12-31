@@ -16,7 +16,7 @@ const SecondPage = (props) =>{
            <PageText title={title} description={desc}/>
            <Sectionposition positionColor={props.position}/>
            <Button changePage={props.onChangePage} text={button}/>
-           <SkipButton />
+           <SkipButton skipInteraction={props.onSkip}/>
         </>
     )
 }

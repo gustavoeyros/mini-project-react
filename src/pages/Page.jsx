@@ -15,10 +15,13 @@ const Page = () =>{
             return prevPage + 1
         })
     }
+    const skipBtn = () => {
+        setPages(3)
+    }
     return (
         <>
-           {(pages == 1 || pages > 3) &&  <FirstPage onChangePage={changePageHandler} position={pages} />}
-           {pages === 2 && <SecondPage onChangePage={changePageHandler} position={pages} />}
+           {(pages == 1 || pages > 3) &&  <FirstPage onChangePage={changePageHandler} position={pages} onSkip={skipBtn}/>}
+           {pages === 2 && <SecondPage onChangePage={changePageHandler} position={pages} onSkip={skipBtn} />}
            {pages === 3 && <ThirdPage onChangePage={changePageHandler} position={pages} />}
         </>
     )

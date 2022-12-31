@@ -1,8 +1,8 @@
 import style from './SkipButton.module.css'
 
-const SkipButton = () => {
+const SkipButton = (props) => {
     return(
-       <button className={`${style.button}`}>
+       <button className={`${style.button}`} onClick={props.skipInteraction}>
             Skip
        </button>
     )
