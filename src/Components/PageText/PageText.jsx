@@ -1,16 +1,4 @@
-import styled from 'styled-components'
-const Wrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-items: center;
-text-align: center;
-align-items: center;
-
-& p{
-  width: 70%
-}
-`
-
+import {Wrapper} from './styled'
 const PageText = (props) => {
   return (
     <Wrapper>
