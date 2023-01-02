@@ -1,11 +1,5 @@
 import styled from 'styled-components'
 const SectionPosition = (props) => {
-  const ColorSection = styled.div`
-  ${props.positionColor === 1 ? "&:first-child{background: #92E3A9;; border: none};" : ''}
-  ${props.positionColor === 2 ? "&:nth-child(2) {background: #92E3A9;; border: none" : ''}
-  ${props.positionColor === 3 ? "&:last-child {background: #92E3A9;; border: none" : ''}
-  `
-
   const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -18,6 +12,11 @@ const SectionPosition = (props) => {
     border: 1px solid black;
     border-radius: 50%;
   } 
+  `
+  const ColorSection = styled.div`
+  ${props.positionColor === 1 ? "&:first-child{background: #92E3A9;; border: none};" : ''}
+  ${props.positionColor === 2 ? "&:nth-child(2) {background: #92E3A9;; border: none" : ''}
+  ${props.positionColor === 3 ? "&:last-child {background: #92E3A9;; border: none" : ''}
   `
 
     return (
