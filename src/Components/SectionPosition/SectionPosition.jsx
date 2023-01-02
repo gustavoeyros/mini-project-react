@@ -1,5 +1,5 @@
 import style from './SectionPosition.module.css'
-const Sectionposition = (props) => {
+const SectionPosition = (props) => {
     return (
       <div className={`${style.container}`}>
             {props.positionColor == 1 ? <div className={`${style.colorSection}`}></div> : <div></div>}
@@ -9,4 +9,4 @@ const Sectionposition = (props) => {
     )
 }
 
-export default Sectionposition
+export default SectionPosition
