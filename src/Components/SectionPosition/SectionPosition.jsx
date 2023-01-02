@@ -1,11 +1,31 @@
-import style from './SectionPosition.module.css'
+import styled from 'styled-components'
 const SectionPosition = (props) => {
+  const ColorSection = styled.div`
+  ${props.positionColor === 1 ? "&:first-child{background: #92E3A9;; border: none};" : ''}
+  ${props.positionColor === 2 ? "&:nth-child(2) {background: #92E3A9;; border: none" : ''}
+  ${props.positionColor === 3 ? "&:last-child {background: #92E3A9;; border: none" : ''}
+  `
+
+  const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+
+  & div{
+    display: flex;
+    width: 12px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 50%;
+  } 
+  `
+
     return (
-      <div className={`${style.container}`}>
-            {props.positionColor == 1 ? <div className={`${style.colorSection}`}></div> : <div></div>}
-            {props.positionColor == 2 ? <div className={`${style.colorSection}`}></div> : <div></div>}
-            {props.positionColor == 3 ? <div className={`${style.colorSection}`}></div> : <div></div>}
-      </div>
+      <Wrapper>
+           <ColorSection />
+           <ColorSection />
+           <ColorSection />
+      </Wrapper>
     )
 }
 

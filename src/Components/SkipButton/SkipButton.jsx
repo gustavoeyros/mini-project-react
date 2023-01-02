@@ -1,10 +1,17 @@
-import style from './SkipButton.module.css'
+import styled from 'styled-components'
 
 const SkipButton = (props) => {
+    const Button = styled.button`
+    font-size: 18px;
+    color: #92E3A9;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;`
+    
     return(
-       <button className={`${style.button}`} onClick={props.skipInteraction}>
+       <Button  onClick={props.skipInteraction}>
             Skip
-       </button>
+       </Button>
     )
 }
 
