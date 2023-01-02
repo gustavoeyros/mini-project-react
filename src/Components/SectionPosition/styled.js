@@ -13,3 +13,19 @@ export const Wrapper = styled.div`
     border-radius: 50%;
   }
 `;
+
+export const ColorSection = styled.div`
+  ${(props) =>
+    props.positionColor === 1
+      ? "&:first-child{background: #92E3A9;; border: none};"
+      : ""}
+
+  ${(props) =>
+    props.positionColor === 2
+      ? "&:nth-child(2) {background: #92E3A9;; border: none"
+      : ""}
+   ${(props) =>
+    props.positionColor === 3
+      ? "&:last-child {background: #92E3A9;; border: none"
+      : ""}
+`;

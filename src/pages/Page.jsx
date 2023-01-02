@@ -24,7 +24,6 @@ const Page = (props) =>{
     const skipBtn = () => {
         setPages(3)
     }
-    console.log(pages)
     return (
         <>
         {(pages == 1 || pages > 3) && 

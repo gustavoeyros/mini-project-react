@@ -1,22 +1,10 @@
-import {Wrapper} from './styled'
-import styled from 'styled-components'
+import {Wrapper, ColorSection} from './styled'
 const SectionPosition = (props) => {
-  const ColorSection = styled.div`
-  ${props.positionColor === 1
-    ? "&:first-child{background: #92E3A9;; border: none};"
-    : ""}
-  ${props.positionColor === 2
-    ? "&:nth-child(2) {background: #92E3A9;; border: none"
-    : ""}
-${props.positionColor === 3
-    ? "&:last-child {background: #92E3A9;; border: none"
-    : ""}
-`;
     return (
       <Wrapper>
-           <ColorSection />
-           <ColorSection  />
-           <ColorSection />
+           <ColorSection positionColor = {props.positionColor}/>
+           <ColorSection positionColor = {props.positionColor}/>
+           <ColorSection positionColor = {props.positionColor}/>
       </Wrapper>
     )
 }
